@@ -1,0 +1,38 @@
+h1{
+  color: aqua;
+}
+.navc{
+  background-image: url(../asset/img/bgnoise_lg.png);
+  vertical-align: middle;
+}
+.brand{
+  color: #000000;
+  font-size: 25px;
+  margin-left: 10px;
+}
+ .love,.search{
+  display: inline-block;
+  background: #222222;
+  margin-left: 20px;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 15px;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 25px;
+}
+.love:hover,.search:hover{
+  background: #fff;
+  color: #222;
+}
+.love span , .search span{
+  margin-left: 5px;
+}
+.num{
+  font-size: 15px;
+  color: #000;
+  padding-left: 15px;
+  
+}

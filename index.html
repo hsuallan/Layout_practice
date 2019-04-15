@@ -1,19 +1,168 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-  <div class="container navc">
-        <nav class="navbar navbar-expand-lg">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <title>Hello, world!</title>
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="d-flex flex-row">
+      <div v-bind:class="{ closed:isclosed } " class="">
+        <div class="angel">
+          <i class="fas fa-exchange-alt angel-icon" v-on:click="simple()"></i>
+        </div>
+        <div v-if="!isclosed" class="full">
+          <div class="mainside">
+            <div class="mainitem">
+              <div class="logos">
+                <div class="logo"></div>
+                <div class="logo2"></div>
+              </div>
+              <ul style="font-size:18px;">
+                <li>
+                  <i class="fas fa-bars"></i>
+                  <span>文章總覽</span>
+                </li>
+                <li>
+                  <i class="fas fa-search"></i>
+                  <span>搜尋文章</span>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i>
+                  <span>地球24小時</span>
+                </li>
+                <li>
+                  <i class="fas fa-gift"></i>
+                  <span>地球商號</span>
+                </li>
+
+              </ul>
+            </div>
+            <div class="news">
+              <strong>本日新文</strong>
+              <ul style="font-size:15px;">
+                <li>
+                  <div class="new">NEW</div>
+                  <span>不管中學畢業會考 波蘭教師無限期罷工抗議低薪</span>
+                </li>
+                <li>
+                  <div class="new">NEW</div>
+                  <span>不管中學畢業會考 波蘭教師無限期罷工抗議低薪</span>
+                </li>
+                <li>
+                  <div class="new">NEW</div>
+                  <span>偷偷摸摸修馬路 義大利羅馬出現「路平志工」</span>
+                </li>
+                <li>
+                  <div class="new">NEW</div>
+                  <span>偷偷摸摸修馬路 義大利羅馬出現「路平志工」</span>
+                </li>
+              </ul>
+            </div>
+            <div class="special">
+              <strong>編輯特刊</strong>
+              <ul>
+                <li>
+                  <span>1萬篇達成，你我一起走過的DQ</span>
+                </li>
+                <li>
+                  <span>1萬篇達成，你我一起走過的DQ</span>
+                </li>
+                <li>
+                  <span>1萬篇達成，你我一起走過的DQ</span>
+                </li>
+                <li>
+                  <span>1萬篇達成，你我一起走過的DQ</span>
+                </li>
+                <li>
+                  <span>1萬篇達成，你我一起走過的DQ</span>
+                </li>
+                <li>
+                  <span>1萬篇達成，你我一起走過的DQ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="subitem" style="font-size:18px;">
+              <ul>
+                <li>
+                  <i class="fas fa-th"></i>
+                  <span>合作夥伴</span>
+                </li>
+                <li>
+                  <i class="fas fa-power-off"></i>
+                  <span>會員登入</span>
+                </li>
+                <li>
+                  <i class="fas fa-heart"></i>
+                  <span>我的收藏</span>
+                </li>
+                <li>
+                  <i class="fab fa-facebook"></i>
+                  <span>facebook 粉絲團</span>
+                </li>
+                <li>
+                  <i class="fab fa-google-plus-g"></i>
+                  <span>Google + 專頁</span>
+                </li>
+                <li>
+                  <i class="fas fa-comment"></i>
+                  <span>LINE@生活圈</span>
+                </li>
+              </ul>
+            </div>
+            <div class="subside fixed-bottom">
+              <ul>
+                <li>
+                  <i class="fas fa-info-circle"></i>
+                  <span>關於地球圖輯隊</span>
+                </li>
+                <li>
+                  <i class="fas fa-book"></i>
+                  <span>使用說明</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div v-else style="display:none" v-bind:style="closedstyle" class="easy">
+          <div class="logo" style="margin-bottom:25px;"></div>
+          <ul>
+            <li v-bind:title="easy.a"><i class="fas fa-bars" ></i></li>
+            <li v-bind:title="easy.b"><i class="fas fa-search"></i></li>
+            <li v-bind:title="easy.c"><i class="far fa-clock"></i></li>
+            <li v-bind:title="easy.d"><i class="fas fa-gift"></i></li>
+          </ul>
+          <ul>
+            <li v-bind:title="easy.e"><i class="fas fa-th"></i></li>
+            <li v-bind:title="easy.f"><i class="fas fa-power-off"></i></li>
+            <li v-bind:title="easy.g"><i class="fas fa-heart"></i></li>
+            <li v-bind:title="easy.h"><i class="fab fa-facebook"></i></li>
+            <li v-bind:title="easy.i"><i class="fab fa-google-plus-g"></i></li>
+            <li v-bind:title="easy.j"><i class="fas fa-comment"></i></li>
+          </ul>
+          <div class="fixed-bottom sidefix">
+            <ul style="background:#222; color: #fff; width: 50px;">
+              <li v-bind:title="easy.k"><i class="fas fa-info-circle"></i></li>
+              <li v-bind:title="easy.l"><i class="fas fa-book"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navc">
+        <nav class="navbar">
           <i class="fas fa-bars" style="font-size:25px;"></i>
           <span class="navbar-brand brand">文章總覽</span>
           <div class="search">
@@ -24,14 +173,24 @@
             <i class="far fa-heart"></i>
             <span>收藏</span>
           </div>
-      </nav>
-   <div class="num">共有<span style="font-size: 15px;font-style: italic; padding: 0 5px;">10</span>件</div>
+        </nav>
+        <div class="num">共有<span style="font-size: 15px;font-style: italic; padding: 0 5px;">10</span>件</div>
+      </div>
+    </div>
   </div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -7,8 +7,13 @@ ul{
 .sidebar{
   max-width: 230px;
 }
+.main{
+  width:100%;
+  background-image: url(../asset/img/bgnoise_lg.png);
+  overflow-x:hidden;
+}
 .angel{
-  width: 230px;
+  height: 30px;
   color: #fff;
   padding-left: 5px;
   background: #222;
@@ -78,12 +83,13 @@ ul{
   
 }
 .full {
-  max-height: calc(100vh - 115px);
+  max-height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
   background: #222222;
   color:#fff;
-  padding-bottom: 10px;
+  padding-bottom: 100px;
+  position: fixed;
 }
 .full ul , .easy ul{
   padding-inline-start: 0;
@@ -159,11 +165,46 @@ ul{
   height: calc(100vh - 95.2px);
   background: #222;
   color:#fff;
-  padding-bottom: cal;
+  padding-bottom: 20px;
+  position: fixed;
 }
 .easy li{
   display: flex;
   align-items: center;
   justify-content:center;
   height: 50px;
+  width: 50px;
+}
+
+.newscard{
+  background-image: url(../asset/img/bgnoise_lg.png);
+  border-top: gray solid 3px;
+}
+.footer{
+  color: #fff;
+  background-color: #222;
+}
+.aaa{
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  right:40px;
+  bottom: 80px;
+  background-color: #222;
+}
+.aaa:hover{
+  transform: scaleX(1.4) scaleY(1.4);
+  text-decoration: none;
+}
+.footul{
+  padding-inline-start: 0;
+}
+.footul li{
+  display: inline;
+  padding: 5px 10px;
 }

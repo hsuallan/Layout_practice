@@ -9,7 +9,7 @@ ul{
 }
 .main{
   width:100%;
-  background-image: url(../asset/img/bgnoise_lg.png);
+  background-image: url(asset/img/bgnoise_lg.png);
   overflow-x:hidden;
 }
 .angel{
@@ -30,7 +30,7 @@ ul{
   width: 230px;
 }
 .logo{
-  background-image: url(../asset/img/logoIco.png);
+  background-image: url(asset/img/logoIco.png);
   background-size: cover;
   margin-left: 10px;
   height: 30px;
@@ -40,11 +40,11 @@ ul{
 .logo2{
   height: 55px;
   width: 153px;
-  background-image: url(../asset/img/logo-2.png);
+  background-image: url(asset/img/logo-2.png);
   margin-right: 20px;
 }
 .navc{
-  background-image: url(../asset/img/bgnoise_lg.png);
+  background-image: url(asset/img/bgnoise_lg.png);
   vertical-align: middle;
   width: 100%;
   height: 100px;
@@ -140,7 +140,7 @@ ul{
 .special li,.special li:hover{
   padding: 0 0;
   display: flex;
-  background-image: url(../asset/img/bg1.jpg);
+  background-image: url(asset/img/bg1.jpg);
   width: 230px;
   height: 15vh;
   background-position: 0px -16px;
@@ -177,7 +177,7 @@ ul{
 }
 
 .newscard{
-  background-image: url(../asset/img/bgnoise_lg.png);
+  background-image: url(asset/img/bgnoise_lg.png);
   border-top: gray solid 3px;
 }
 .footer{

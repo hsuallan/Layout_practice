@@ -1,0 +1,43 @@
+.articlemain{
+  width:100%;
+  overflow-x:hidden;
+}
+.line{
+  border-color: #00bb25;
+  background: #00bb25;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.twitter{
+  border-color: #66c3f6;
+  background: #66c3f6;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.facebook{
+  border-color: #4267b2;
+  background: #4267b2;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+.nice{
+  background: #365899;
+  color: #fff;
+  padding: 5px;
+}
+.donate{
+    color:#fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 100px;
+    background: linear-gradient(90deg,#00a2e4,#a7cd6b,#00a2e4,#a7cd6b,#00a2e4);
+    background-size: 500%;
+    opacity: .8;
+    animation: rainbowMov 2s linear infinite;
+    transition: all .35s; 
+  }

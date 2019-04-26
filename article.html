@@ -1,25 +1,21 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
-  <!-- Vue.js -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <title>Hello, world!</title>
-
-</head>
-
-<body>
-  <div id="app">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="article.css">
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="article">
     <div class="d-flex flex-row">
       <div v-bind:class="{ closed:isclosed } " class="">
         <div v-if="!isclosed" class="full">
@@ -165,80 +161,31 @@
           </div>
         </div>
       </div>
-      <div class="main" v-bind:style="mainstyle" style="padding-left: 250px">
-        <div class="navc">
-          <nav class="navbar">
-            <i class="fas fa-bars" style="font-size:25px;"></i>
-            <span class="navbar-brand brand">文章總覽</span>
-            <div class="search">
-              <i class="fas fa-search"></i>
-              <span>搜尋</span>
-            </div>
-            <div class="love">
-              <i class="far fa-heart"></i>
-              <span>收藏</span>
-            </div>
-          </nav>
-          <div class="num">共有<span style="font-size: 15px;font-style: italic; padding: 0 5px;">16</span>件</div>
-        </div>
-        <div class="row no-gutters p-2 newscard">
-          <card-item v-for="n in 8" v-bind:style="card"></card-item>
-          <card-item2 v-for="i in 8" v-bind:style="card"></card-item2>
-        </div>
-        <nav aria-label="Page navigation example ">
-          <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-              <span class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </span>
+      <div class="articlemain" v-bind:style="mainstyle" style="padding-left: 250px">
+        <nav>
+          <ul class="d-flex flex-row justify-content-between" style="margin-right:30px;">
+            <li class="leftnav d-flex flex-row align-items-center">
+              <div class="line mt-2 mr-3"><i class="fab fa-line"></i>傳line</div>
+              <div class="twitter mt-2 mr-3"><i class="fab fa-twitter"></i>推文</div>
+              <div class="facebook mt-2 mr-3"><i class="fab fa-facebook-f"></i>分享</div>
+              <div class="nice mt-2"><i class="fas fa-thumbs-up"></i>讚</div>
             </li>
-            <li class="page-item">
-              <span class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </span>
+            <li class="middlenav">
+              <div class="donate"><i class="fas fa-heart"></i>文章贊助</div>
             </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item" v-for="n in 7"><span class="page-link" href="#">{{ n+1 }}</span></li>
+            <li class="rightnav">
+              
+            </li>
           </ul>
         </nav>
-        <footer class="footer">
-          <div class="row">
-            <div class="col-8">
-              <span class="p-3"> 2019 <img src="/asset/img/yam_logo.png"> 蕃薯藤, all rights reserved.  關於地球圖輯隊 | 常見問題 | 隱私政策</span>
-              <ul class="footul">
-                <li><i class="fab fa-facebook-f p-2"></i>粉絲團</li>
-                <li><i class="fab fa-google-plus-g p-2"></i>專頁</l>
-                <li><i class="fas fa-rss-square p-2"></i>RSS</li>
-                <li><i class="far fa-envelope p-2"></i>意見信箱</li>
-                <li><i class="fas fa-mobile-alt p-2"></i>行動版</li>
-              </ul>
-            </div>
-            <div class="col-4">
-              <a class="aaa" href="#"><i class="fas fa-arrow-up" style="color:#fff;"></i></a>
-              <div style="font-size:9px; text-align: right; line-height: 9px; padding-right:5px">
-                licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License Richard Tabor. Atle Mo. Nikolalek. Brandon Jacoby.licensed
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
   </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/article.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
 </html>

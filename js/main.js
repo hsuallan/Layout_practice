@@ -1,7 +1,7 @@
 Vue.component('card-item',{
   template:`<div class="card text-center m-3" style="max-width:235px; height: 450px;  overflow: hidden;">
             <div class="card-body">
-              <img class="card-img-top card-img1" src="/asset/img/card_img.jpg" alt="Card image cap">
+              <img class="card-img-top card-img1" src="asset/img/card_img.jpg" alt="Card image cap">
               <time style="font-size:10px; color:#999;">2019-04-16 11:30:00</time>
               <h3 class="card-title">為什麼厄瓜多不再庇護阿桑奇？</h3>
               <p class="card-text">
@@ -13,7 +13,7 @@ Vue.component('card-item',{
 Vue.component('card-item2',{
   template:`<div class="card text-center m-3" style="max-width:235px; height: 450px; overflow: hidden;" >
             <div class="card-body">
-              <img class="card-img-top card-img1" src="/asset/img/card_img2.jpg" alt="Card image cap">
+              <img class="card-img-top card-img1" src="asset/img/card_img2.jpg" alt="Card image cap">
               <time style="font-size:10px; color:#999;">2019-04-12 11:20:00</time>
               <h3 class="card-title">不管中學畢業會考 波蘭教師無限期罷工抗議低薪</h3>
               <p class="card-text">

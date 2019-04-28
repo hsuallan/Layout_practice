@@ -1,6 +1,17 @@
 ul{
   list-style: none;
+  padding-inline-start: 0px;
 }
+a{
+  color: inherit;
+}
+a:link{
+  color: inherit;
+  text-decoration: none;
+}
+a:hover { 
+  color:inherit;
+ }
 .closed{
   width:50px !important;
 }
@@ -175,7 +186,17 @@ ul{
   height: 50px;
   width: 50px;
 }
-
+.carditem:hover{
+  transform: scale(1.2);
+  z-index: 10;
+}
+.cardicon{
+  padding: 10px 20px;
+}
+.cardicon:hover{
+  color:#fff;
+  background-color: #000;
+}
 .newscard{
   background-image: url(asset/img/bgnoise_lg.png);
   border-top: gray solid 3px;

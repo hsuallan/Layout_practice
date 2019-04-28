@@ -1,5 +1,6 @@
 Vue.component('card-item',{
-  template:`<div class="card text-center m-3" style="max-width:235px; height: 450px;  overflow: hidden;">
+  template:`
+           <a href="article.html" target="_blank" rel="noopener noreferrer" class="card text-center m-3 carditem" style="max-width:235px; "  >
             <div class="card-body">
               <img class="card-img-top card-img1" src="asset/img/card_img.jpg" alt="Card image cap">
               <time style="font-size:10px; color:#999;">2019-04-16 11:30:00</time>
@@ -8,10 +9,18 @@ Vue.component('card-item',{
                 七年前，《維基解密》的創辦人阿桑奇進入厄瓜多駐英國大使館尋求政治庇護；七年後，厄瓜多大使館忍無可忍結束了對他的庇護，在 11號這天讓英國警方進入逮捕了阿桑奇。究竟，為什麼厄瓜多不再庇護阿桑奇？ 
               </p>
             </div>
-          </div>`
+            <div class="card-footer text-muted bg-white">
+              <ul class="d-flex flex-row bg-white">
+                <li><i class="far fa-eye mt-2">2019</i></li>
+                <li><i class="fab fa-facebook-square cardicon"></i></li>
+                <li><i class="fab fa-twitter-square cardicon"></li>
+                <li><i class="fas fa-heart cardicon"></i></li>
+              </ul>  
+            </div>
+          </a>`
 })
 Vue.component('card-item2',{
-  template:`<div class="card text-center m-3" style="max-width:235px; height: 450px; overflow: hidden;" >
+  template:`<div class="card text-center m-3 carditem" style="max-width:235px; overflow: hidden;" >
             <div class="card-body">
               <img class="card-img-top card-img1" src="asset/img/card_img2.jpg" alt="Card image cap">
               <time style="font-size:10px; color:#999;">2019-04-12 11:20:00</time>
@@ -19,6 +28,14 @@ Vue.component('card-item2',{
               <p class="card-text">
                上周一開始，數十萬名波蘭教師不顧教育部反對、不管中學會考近在眼前，堅持罷工抗議低薪與長期未改善的課綱品質，受影響的學生們沒課可上，也乾脆加入了支持教師抗議的行列。 
               </p>
+            </div>
+            <div class="card-footer text-muted bg-white">
+              <ul class="d-flex flex-row bg-white">
+                <li><i class="far fa-eye mt-2">2019</i></li>
+                <li><i class="fab fa-facebook-square cardicon"></i></li>
+                <li><i class="fab fa-twitter-square cardicon"></li>
+                <li><i class="fas fa-heart cardicon"></i></li>
+              </ul>  
             </div>
           </div>`
 })
@@ -63,7 +80,10 @@ var app = new Vue({
           this.card["max-width"] =="235px"
             ?this.card["max-width"] = "280px"
             :this.card["max-width"] = "235px"
-          } 
+          },
+        test:function(){
+          alert("aaa")
+        }
       }
       })
 

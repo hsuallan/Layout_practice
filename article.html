@@ -14,7 +14,22 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body style="background:rgb(243, 242, 238);">
+    <div class="modal fade" id="donatemodal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Donate address</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>ETH address:0xfA864d8D2DA64f377aD5390072Cb997526F62809</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="article">
     <div class="d-flex flex-row">
       <div v-bind:class="{ closed:isclosed } " class="">
@@ -164,20 +179,63 @@
       <div class="articlemain" v-bind:style="mainstyle" style="padding-left: 250px">
         <nav>
           <ul class="d-flex flex-row justify-content-between" style="margin-right:30px;">
-            <li class="leftnav d-flex flex-row align-items-center">
-              <div class="line mt-2 mr-3"><i class="fab fa-line"></i>傳line</div>
-              <div class="twitter mt-2 mr-3"><i class="fab fa-twitter"></i>推文</div>
-              <div class="facebook mt-2 mr-3"><i class="fab fa-facebook-f"></i>分享</div>
-              <div class="nice mt-2"><i class="fas fa-thumbs-up"></i>讚</div>
+            <li class="leftnav d-flex flex-row align-items-center mt-3">
+              <div class="line  mr-3"><i class="fab fa-line"></i>傳line</div>
+              <div class="twitter  mr-3"><i class="fab fa-twitter"></i>推文</div>
+              <div class="facebook  mr-3"><i class="fab fa-facebook-f"></i>分享</div>
+              <div class="nice "><i class="fas fa-thumbs-up"></i>讚</div>
             </li>
-            <li class="middlenav">
-              <div class="donate"><i class="fas fa-heart"></i>文章贊助</div>
+            <li class="middlenav mt-3">
+              <div class="donate" data-toggle="modal" data-target="#donatemodal"><i class="fas fa-heart"></i>文章贊助</div>
             </li>
-            <li class="rightnav">
-              
+            <li class="rightnav d-flex flex-row justify-content-end mt-3">
+              <label class="traceme">追蹤 DQ</label>
+              <div class="lineicon basicicon"><i class="fab fa-line"></i></div>
+              <div class="igicon basicicon"><i class="fab fa-instagram"></i></div>
+              <div class="fbicon basicicon"><i class="fab fa-facebook-square"></i></div>
+              <div class="twittericon basicicon"><i class="fab fa-twitter-square"></i></div>
+              <div class="youtubeicon basicicon"><i class="fab fa-youtube"></i></div>
+              <div class="plurkicon basicicon"><i class="fas fa-parking"></i></div>
             </li>
           </ul>
         </nav>
+        <div class="yapai">[小隊長公告] &nbsp 廣告業務合作，歡迎聯繫我們</div>
+        <article class="">
+          <p>七年前，《維基解密》的創辦人阿桑奇進入厄瓜多駐英國大使館尋求政治庇護；七年後，厄瓜多大使館忍無可忍結束了對他的庇護，在 11號這天讓英國警方進入逮捕了阿桑奇。究竟，為什麼厄瓜多不再庇護阿桑奇？</p>
+          <h3>超級駭客  曝光機密文件</h3>
+          <p>說到《維基解密》(WikiLeaks)的創辦人阿桑奇(Julian Assange)，大家對他的第一印象不外乎是超級駭客，靠著高超的電腦技巧和來自世界各地的內線曝光了許多機密文件，讓戰爭、貪腐和政府的不法情事攤在陽光下。《美聯社》曾形容《維基解密》宛如一間「充滿全球最敏感文件的大型圖書館」。</p>
+          <h3>受厄瓜多政治庇護  在使館待了七年</h3>
+          <p>然而，出生自澳洲的阿桑奇本身是一名極具爭議的人物，有人將他視為爆料英雄，有人則視他為間諜，美國更欲以涉嫌發動駭客攻擊起訴他。2012年6月，原本身上揹有瑞典性侵官司的阿桑奇在英國棄保潛逃，進入厄瓜多駐倫敦大使館尋求政治庇護，沒想到這一待就待了七年，直到上周四(11)厄瓜多撤銷了對他的政治庇護，讓英國警方進入使館逮捕他為止。</p>
+          <h3>害怕瑞典、美國對付他</h3>
+          <p>回顧阿桑奇尋求厄瓜多庇護時，他聲稱害怕因為性侵官司被引渡回瑞典受審(註)，也害怕美國因為他公開政府機密資料對付他。最後，時任厄瓜多總統的科雷亞(Rafael Correa)決定給他政治庇護，外界認為這與科雷亞的左翼反美傾向有關，此舉也被認為在挑戰美國。</p>
+          <h3>新總統上任  設下居住規範</h3>
+          <p>2017年，厄瓜多總統由較為親美的莫雷諾(Lenín Moreno)上任，當時就傳出厄瓜多將結束對阿桑奇的政治庇護。2018年更傳出厄瓜多對阿桑奇設下一大堆居住規範，包含要他付網路使用費、伙食費、洗衣費，還有好好照顧他的貓詹姆斯(James)，以及維持浴室整潔。</p>
+          <p>註：2017年5月19日，瑞典檢察總長以證據不足，宣布撤銷對阿桑奇的逮捕令，也讓為期 7年的性侵案調查畫下句點。</p>
+          <p>11號這天，厄瓜多總統莫雷諾在Twitter上發布了一段影片，宣布從現在開始厄瓜多撤銷對阿桑奇的政治庇護</p>
+          <h3>辦公室改建成臥房</h3>
+          <p>過去七年來，阿桑奇住在厄瓜多大使館一間由辦公室改建而成的臥室，裡頭有一張床、一盞燈、一台電腦、廚房、浴室和跑步機。有時，阿桑奇還會走出臥室，現身在他小小的陽台上和支持者打招呼，或是召開記者會。<br><br>然而這一切在上周四戛然而止。</p>
+          <h3>忍無可忍  宣布撤銷政治庇護</h3>
+          <p>厄瓜多總統莫雷諾表示，厄瓜多當局對阿桑奇的「沒禮貌和攻擊行為」的忍耐已經「達到極限」。莫雷諾總統說阿桑奇「屢次違反國際公約以及日常生活的規範」。</p>
+          <p>圖為西班牙《國家報》取得的厄瓜多使館影像，阿桑奇正在狹小的房間內溜滑板。</p>
+          <h3>玩滑板、踢足球、放音樂</h3>
+          <p>隨後，厄瓜多外交部長瓦倫西亞(José Valencia)揭露了更多阿桑奇的犯規行為，包含使用沒有和大使館登記的手機，不斷侮辱使館人員是美國間諜，還有不顧使館人員勸阻在使館內玩滑板、踢足球等，更別提他常常在上班時間將音樂放得震天價響，干擾使館人員工作。</p>
+          <h3>曾將糞便抹在牆上</h3>
+          <p>除此之外，厄瓜多大使館的清潔人員也說他的衛生習慣很糟糕，房間裡曾傳出異味、好幾個星期不洗澡等都是家常便飯，他甚至曾將糞便抹在牆上。</p>
+          <h3>訪客太多  常常佔用會客室</h3>
+          <p>再者，基於人道理由阿桑奇可以接見外賓，像是美國流行歌手女神卡卡(Lady Gaga)、好萊塢演員約翰庫薩克(John Cusack)、日裔美籍藝術家小野洋子(Yoko Ono)和英國龐克時尚教母薇薇安威斯伍德(Vivienne Westwood)都曾經是他的座上賓。而這些川流不息的訪客和媒體常常佔用使館內的會客室，其中一名使館警衛就說：「使館官員和外交團隊已經厭倦了阿桑奇老是用會客室來受訪。」</p>
+          <h3>好友：不像他會做的事</h3>
+          <p>對於阿桑奇種種出格的行為，阿桑奇的好友、近日才造訪厄瓜多大使館的史密斯(Vaughan Smith)表示，這些對他的指控都不是真的。史密斯說：「阿桑奇雖然身處壓力，但每次我拜訪他的時候，他看起來都處於平衡的狀態，這些(無理的行為)不像他會做的事。」</p>
+          <h3>總統：結束對屁孩的庇護</h3>
+          <p>至於壓垮厄瓜多政府庇護阿桑奇的最後一根稻草，可能是今年二月出現的一個匿名網站，上頭洩露了厄瓜多總統莫雷諾的家族照片和文件，指控他和家人透過設在巴拿馬的境外帳戶不法獲利。<br><br>莫雷諾總統否認網站上列出的所有指控，他指控阿桑奇是這個網站的幕後藏鏡人。上周四，莫雷諾總統就說：「當你受人庇護，別人照顧你、給你食物吃時，你不會攻擊屋主。」<br><br>「我們決定結束對這個被寵壞屁孩的庇護，從現在開始，我們會更小心地庇護真正需要的人，而不是那些視顛覆政府為唯一目標的可悲駭客。」</p>
+          <h3>前後花了兩億多元</h3>
+          <p>根據統計，厄瓜多大使館為了庇護阿桑奇，從 2012-2018年間總共花了將近 650萬美元(折台幣約 2億元)。</p>
+          <h3>阿桑奇律師：這都不是真的</h3>
+          <p>針對厄瓜多當局對阿桑奇的指控，阿桑奇的律師羅賓森(Jennifer Robinson)表示這都是不實指控。羅賓森說：「過去幾天來，厄瓜多政府作出了許多令人憤慨的指控，為的是替自己違法的行為，還有讓英國警方進入使館這樣的行為平反。」</p>
+          <h3>父親呼籲澳洲政府出面</h3>
+          <p>阿桑奇人在澳洲的父親希普頓(John Shipton)則呼籲澳洲政府幫幫他的兒子，想辦法讓他的兒子能夠回家。</p>
+          <h3>目前被關在倫敦重刑監獄</h3>
+          <p>現在，阿桑奇被關在倫敦戒備森嚴的重刑監獄──貝爾馬什監獄(Belmarsh prison)，等候引渡審訊。這裡向來以關押重刑犯與恐怖分子聞名，諸如伊斯蘭極端主義教士哈姆札(Abu Hamza)和有英國「恐怖之父」之稱、煽動他人加入恐怖組織伊斯蘭國(IS)的教士喬杜里(Anjem Choudary)都是階下囚。</p>
+        </article>
       </div>
     </div>
   </div>

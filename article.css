@@ -1,3 +1,7 @@
+nav{
+  background:rgba(3,3,3,0.7);
+  padding-bottom: 10px;
+}
 .articlemain{
   width:100%;
   overflow-x:hidden;
@@ -8,6 +12,7 @@
   color: #fff;
   border-radius: 20px;
   padding: 5px 20px;
+  cursor: pointer;
 }
 
 .twitter{
@@ -16,6 +21,7 @@
   color: #fff;
   border-radius: 20px;
   padding: 5px 20px;
+  cursor: pointer;
 }
 
 .facebook{
@@ -24,11 +30,13 @@
   color: #fff;
   border-radius: 20px;
   padding: 5px 20px;
+  cursor: pointer;
 }
 .nice{
   background: #365899;
   color: #fff;
   padding: 5px;
+  cursor: pointer;
 }
 .donate{
     color:#fff;
@@ -40,4 +48,43 @@
     opacity: .8;
     animation: rainbowMov 2s linear infinite;
     transition: all .35s; 
+    cursor: pointer;
   }
+.basicicon{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  margin: 3px;
+  color: rgba(17,17,17,.8);
+  background: hsla(0,0%,100%,.4);
+  text-align: center; 
+  cursor: pointer;
+}
+.basicicon:hover{
+  background: #fff;
+}
+.traceme{
+  color: #fff;
+  text-align: center;
+  margin: 5px 10px;
+}
+.yapai{
+  background: #fbf8e3;
+  font-size: 20px;
+  border-radius: 8px;
+  line-height: 2em;
+  text-align: center;
+  margin-top: 5%;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+article p ,article h3{
+  display: block;
+  width: 700px;
+  text-align: center;
+}
